@@ -12,19 +12,19 @@
     scroll-behavior: smooth;
     display: flex;
     flex-direction: column;
-    margin-bottom: 5%;
+    margin-bottom: 8%;
 }
 
 
 .Contenedor-principal-libros-unidad
-{   width: 100%;
+{   width: 98%;
     height: 250px;
     border: 2px solid #61dafb;
     border-radius: 5px;
     margin-bottom: 10px;
     position: relative;
     padding-top: 15px;
-    padding-left: 15px;
+    margin-left: 15px;
 
 }
 
