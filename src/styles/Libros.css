@@ -12,6 +12,7 @@
     scroll-behavior: smooth;
     display: flex;
     flex-direction: column;
+    margin-bottom: 5%;
 }
 
 
@@ -48,6 +49,7 @@
     position: relative;
     float: left;
     margin-left: 10px;
+    margin-bottom: 100px;
 
 }
 
