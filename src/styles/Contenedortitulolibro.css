@@ -1,0 +1,13 @@
+.Contenedor-principal-titulo{
+    width: 80%;
+    padding: 30px;
+    background: #e2e2e2;
+    margin-top: 20px;
+    display: flex;
+    text-align: left;
+    margin-left: 10%;
+    color: #00c4ff;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 5px;
+}

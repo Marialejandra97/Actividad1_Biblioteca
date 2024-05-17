@@ -1,25 +1,25 @@
-import logo from './logo.svg';
+import React from "react";
+import { useState } from "react";
 import './App.css';
+import {Pagina_inicio} from "./views/Pagina_inicio";
+import {DireccionamietoRouter} from "./router/DireccionamietoRouter";
+import {Libros_contexto} from "./components/Libros_contexto";
+import {BrowserRouter} from "react-router-dom";
+import {Header} from "./components/Header";
+import {LibrosProvider} from "./components/Libros_contexto";
+
 
 function App() {
+  const [Data, seData] = useState([]);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <>
+        <LibrosProvider >
+        <DireccionamietoRouter></DireccionamietoRouter>
+        </LibrosProvider>
+      </>
   );
+
 }
 
 export default App;
