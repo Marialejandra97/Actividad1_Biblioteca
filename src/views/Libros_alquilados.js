@@ -30,6 +30,11 @@ export const Libros_alquilados = () => {
         console.log("hola");
     });
 
+    useEffect(() => {
+        setAlquilados(librosAlquilados);
+        console.log("libros alquilados" , librosAlquilados)
+    });
+
     console.log(librosAlquilados);
 
 
@@ -76,6 +81,7 @@ export const Libros_alquilados = () => {
             if (librosAlquilados[i].nombre === alquilados2.nombre) {
                 librosAlquilados.splice(i, 1);
                 alert("Gracias el libro fue devuelto");
+                console.log("libros alquilados" , librosAlquilados)
                 //actualizarpag();
                 actualizarpaginita();
             }
