@@ -1,6 +1,6 @@
 .contenedor-buscador{
 
-        width: 80%;
+        width: 79%;
         padding: 20px;
         background: #e2e2e2;
         margin-top: 20px;
@@ -11,6 +11,8 @@
         font-size: 20px;
         font-weight: bold;
         border-radius: 5px;
+
+
 
 }
 

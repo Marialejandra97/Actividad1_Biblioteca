@@ -14,13 +14,14 @@ import {Vision} from "../components/Vision";
 
 
 
+
 export const Informacion = () => {
 
 
     return (
-        <div>
+        <div className= "contenedor-primario">
             <Header/>
-            <div className="contenedor-principal-info">
+            <div className="contenedor-primario-info">
             <Acercade></Acercade>
             <Mision></Mision>
             <Vision></Vision>

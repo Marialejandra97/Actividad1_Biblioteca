@@ -1,22 +1,32 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     text-decoration: none;
     list-style: none;
 }
 
-body{
-    font-family: Arial, Helvetica, sans-serif;
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
-.footer-contenedorprincipal{
-    padding: 35px 0;
-    background: #00c4ff;
-
-
+.header{
+    background-color: #00c4ff;
+    color: white;
+    text-align: center;
+    padding: 30px 0;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Ensure the header is above other content */
 }
-.footer-contenedorprincipal-menu{
+
+.header-contenedor-menu{
     position: absolute;
     top: 0;
     left: 0;
@@ -26,26 +36,27 @@ body{
     justify-content: space-between;
     margin-right: 100px;
     margin-left: 100px;
+    margin-bottom: 400px;
 }
 
-.footer-contenedorprincipal-menu-titulo{
+.header-contenedor-menu-lbl{
     font-size: 30px;
     color: white;
 
 }
 
-.footer-contenedorprincipal-menu-navbar-listas{
+.header-contenedor-menu-navar-listas{
     position: relative;
     float: left;
 }
 
-.footer-contenedorprincipal-menu-navbar-listas-enlaces{
+.header-contenedor-menu-navar-listas-link{
     font-size: 18px;
     padding: 20px;
     color: white;
     display: block;
 }
-.footer-contenedorprincipal-menu-navbar-listas-enlaces:hover{
+.header-contenedor-menu-navar-listas-link:hover{
 
     color: darkblue;
 
@@ -54,7 +65,7 @@ body{
     display: none;
 }
 
-.footer-contenedorprincipal-menu-titulo-icono{
+.header-contenedor-menu-icono{
     width: 40px;
     margin-right: 10px;
 }

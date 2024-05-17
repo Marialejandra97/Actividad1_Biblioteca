@@ -3,6 +3,7 @@ import { useContext, useState, useEffect } from 'react';
 import '../styles/Header.css';
 import '../styles/Footer.css';
 import '../styles/Libros.css';
+import '../styles/Contenedortitulolibro.css';
 import '../styles/Buscador.css';
 import {Header} from "../components/Header";
 import {Footer} from "../components/Footer";

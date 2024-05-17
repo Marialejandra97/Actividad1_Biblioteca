@@ -6,32 +6,31 @@ export const Header = () => {
 
     return (
 
-        <header >
-            <div className="footer-contenedorprincipal">
-                <div className="footer-contenedorprincipal-menu">
+        <header className="header" >
+                <div className="header-contenedor-menu">
 
-                    <label className="footer-contenedorprincipal-menu-titulo">
-                        <img src="../libro.png" className="footer-contenedorprincipal-menu-titulo-icono"/>Librin
+                    <label className="header-contenedor-menu-lbl">
+                        <img src="../libro.png" className="header-contenedor-menu-icono"/>Librin
                     </label>
-                    <nav className="footer-contenedorprincipal-menu-navbar">
+                    <nav className="header-contenedor-menu-navar">
                         <ul>
-                            <li className="footer-contenedorprincipal-menu-navbar-listas">
-                                <Link to="*" className="footer-contenedorprincipal-menu-navbar-listas-enlaces">
+                            <li className="header-contenedor-menu-navar-listas">
+                                <Link to="*" className="header-contenedor-menu-navar-listas-link">
                                     Inicio
                                 </Link>
                             </li>
-                            <li className="footer-contenedorprincipal-menu-navbar-listas">
-                                <Link to="/Libros" className="footer-contenedorprincipal-menu-navbar-listas-enlaces">
+                            <li className="header-contenedor-menu-navar-listas">
+                                <Link to="/Libros" className="header-contenedor-menu-navar-listas-link">
                                     Libros
                                 </Link>
                             </li>
-                            <li className="footer-contenedorprincipal-menu-navbar-listas">
-                                <Link to="/Alquiler" className="footer-contenedorprincipal-menu-navbar-listas-enlaces">
+                            <li className="header-contenedor-menu-navar-listas">
+                                <Link to="/Alquiler" className="header-contenedor-menu-navar-listas-link">
                                     Alquiler
                                 </Link>
                             </li>
-                            <li className="footer-contenedorprincipal-menu-navbar-listas">
-                                <Link to="/Contacto" className="footer-contenedorprincipal-menu-navbar-listas-enlaces" href="#">
+                            <li className="header-contenedor-menu-navar-listas">
+                                <Link to="/Contacto" className="header-contenedor-menu-navar-listas-link" href="#">
                                     Contacto
                                 </Link >
                             </li>
@@ -42,7 +41,7 @@ export const Header = () => {
 
                 </div>
 
-            </div>
+
 
         </header>
 

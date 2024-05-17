@@ -1,14 +1,15 @@
 .contedor-principal{
-    width: 80%;
-    height: 370px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
     text-align: center;
     justify-content: center;
-    margin-left: 10%;
-    margin-top: 1%;
 
 }
 .contedor-principal-lblacercade{
-    margin-right: 200px;
     font-family: "Century Gothic";
     font-size: 20px;
 }
@@ -23,4 +24,7 @@
 .contedor-principal-img{
     width: 250px;
     height: 250px;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
 }
