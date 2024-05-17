@@ -67,6 +67,7 @@ export const Libros_alquilados = () => {
         for (let i = 0; i < librosAlquilados.length; i++) {
             if (librosAlquilados[i].nombre === alquilados.nombre) {
                 librosAlquilados[i].fechafin=fecha_aplazada;
+                setAlquilados(librosAlquilados);
                 alert("La fecha de su entrega se aplazo 5 dias")
                 //actualizarpag();
                 actualizarpaginita();
@@ -82,6 +83,7 @@ export const Libros_alquilados = () => {
                 librosAlquilados.splice(i, 1);
                 alert("Gracias el libro fue devuelto");
                 console.log("libros alquilados" , librosAlquilados)
+                setAlquilados(librosAlquilados);
                 //actualizarpag();
                 actualizarpaginita();
             }
