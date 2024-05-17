@@ -28,7 +28,6 @@ export const Libros = ({ nombre, autor, aniopublicacion, isbn, imagen_portada, s
             </div>
             <div className="Contenedor-principal-libros-unidad-btn">
                 <button onClick={() => onButtonClick({ nombre, autor, aniopublicacion, isbn, imagen_portada, sipnosis, critica, fechainicio, fechafin })}  className="Contenedor-principal-libros-unidad-btn-alquilar">
-                    <img className="Contenedor-principal-libros-unidad-btn-alquilar-icon"  src="../icono_alquiler.png"/>
                     Alquilar
                 </button>
             </div>

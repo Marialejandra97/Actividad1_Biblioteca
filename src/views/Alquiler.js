@@ -7,10 +7,8 @@ import '../styles/Buscador.css';
 import {Header} from "../components/Header";
 import {Footer} from "../components/Footer";
 import {Libros} from "../components/Libros";
-import { LibrosContext} from "../components/Libros_contexto";
 import {Contenedortitulolibro} from "../components/Contenedortitulolibro";
 import {Buscador} from "../components/Buscador";
-import UseFetchLibros from "../Hook/useActualizacion";
 import useLibros from "../Hook/useLibros";
 
 
@@ -34,16 +32,16 @@ export const Alquiler = () => {
                 <Buscador
                     onBusquedaChange={handleBusquedaChange}/>
                 <div className="Contenedor-principal-libros">
-                    {librosFiltrados.map((restaurant, index) => (
+                    {librosFiltrados.map((libritos, index) => (
                         <Libros
                             key={index}
-                            nombre={restaurant.nombre}
-                            autor={restaurant.autor}
-                            aniopublicacion={restaurant.anio_publicacion}
-                            isbn={restaurant.codigo_isbn}
-                            imagen_portada={restaurant.imagen_portada}
-                            sipnosis={restaurant.sipnosis}
-                            critica={restaurant.critica}
+                            nombre={libritos.nombre}
+                            autor={libritos.autor}
+                            aniopublicacion={libritos.anio_publicacion}
+                            isbn={libritos.codigo_isbn}
+                            imagen_portada={libritos.imagen_portada}
+                            sipnosis={libritos.sipnosis}
+                            critica={libritos.critica}
                             onButtonClick={handleAlquilarLibro}
                         />
                     ))}

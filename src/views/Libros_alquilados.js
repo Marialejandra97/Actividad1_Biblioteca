@@ -18,7 +18,7 @@ export const Libros_alquilados = () => {
 
     const {  librosAlquilados } = useContext(LibrosContext);
     const [alquilados, setAlquilados] = useState([]);
-    const forceUpdate = UseActualizacion();
+    const actualizarpaginita = UseActualizacion();
 
 
     //Para actualizar el estado de los libros alquilados cuando cambia el contexto de los libros (librosAlquilados).
@@ -39,7 +39,7 @@ export const Libros_alquilados = () => {
         const valores=librosAlquilados[0].nombre;
         console.log("a",librosAlquilados[0].nombre);
         const fechaFinLabel = document.getElementById('lblAplazar');
-        alert("Se aplazo la entrega 5 días");
+
         // Obtener la fecha de inicio
         const f_inicio_original = alquilados.fecha_fin;
 
@@ -49,9 +49,7 @@ export const Libros_alquilados = () => {
 
         // Crear un objeto Date a partir de la fecha en el nuevo formato
         const fecha_inicio_obj = new Date(f_inicio);
-        alert("info: " +fecha_inicio_obj );
         fecha_inicio_obj.setDate(fecha_inicio_obj.getDate() + 5)
-        alert("info2: " +fecha_inicio_obj );
         const fecha_inicio_obj2  = new Date(fecha_inicio_obj);
         const fecha_aplazada=fecha_inicio_obj2.toLocaleDateString();
 
@@ -64,9 +62,9 @@ export const Libros_alquilados = () => {
         for (let i = 0; i < librosAlquilados.length; i++) {
             if (librosAlquilados[i].nombre === alquilados.nombre) {
                 librosAlquilados[i].fechafin=fecha_aplazada;
-                alert("La fecha de su entrega de aplazo 5 dias")
+                alert("La fecha de su entrega se aplazo 5 dias")
                 //actualizarpag();
-                forceUpdate();
+                actualizarpaginita();
             }
         }
 
@@ -79,7 +77,7 @@ export const Libros_alquilados = () => {
                 librosAlquilados.splice(i, 1);
                 alert("Gracias el libro fue devuelto");
                 //actualizarpag();
-                forceUpdate();
+                actualizarpaginita();
             }
         }
     };
@@ -96,18 +94,18 @@ export const Libros_alquilados = () => {
                 <Contenedortituloalquilados/>
 
                 <div className="Contenedor-principal-libros">
-                    {librosAlquilados.map((restaurant, index) => (
+                    {librosAlquilados.map((libritoalqui, index) => (
                         <LibrosAlquilados
                             key={index}
-                            nombre={restaurant.nombre}
-                            autor={restaurant.autor}
-                            aniopublicacion={restaurant.aniopublicacion}
-                            isbn={restaurant.isbn}
-                            imagen_portada={restaurant.imagen_portada}
-                            sipnosis={restaurant.sipnosis}
-                            critica={restaurant.critica}
-                            fecha_inicio={restaurant.fechainicio}
-                            fecha_fin={restaurant.fechafin}
+                            nombre={libritoalqui.nombre}
+                            autor={libritoalqui.autor}
+                            aniopublicacion={libritoalqui.aniopublicacion}
+                            isbn={libritoalqui.isbn}
+                            imagen_portada={libritoalqui.imagen_portada}
+                            sipnosis={libritoalqui.sipnosis}
+                            critica={libritoalqui.critica}
+                            fecha_inicio={libritoalqui.fechainicio}
+                            fecha_fin={libritoalqui.fechafin}
                             onButtonClick={handlerAplazarentrega}
                             onButtonClick2={handlerEntregarLibro}
 
