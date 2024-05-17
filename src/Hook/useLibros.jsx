@@ -10,8 +10,7 @@ const useLibros = () => {
 
     useEffect(() => {
         // Cargar libros alquilados de localStorage al montar el componente
-        const librosGuardados = JSON.parse(localStorage.getItem('librosAlquilados')) || [];
-        setLibrosAlquilados(librosGuardados);
+
 
         fetch('/libritosdisponibles.json')
             .then(response => response.json())
@@ -19,10 +18,7 @@ const useLibros = () => {
             .catch(error => console.error('Error al cargar el archivo JSON:', error));
     }, [setLibrosAlquilados]);
 
-    useEffect(() => {
-        // Guardar libros alquilados en localStorage cada vez que se actualicen
-        localStorage.setItem('librosAlquilados', JSON.stringify(librosAlquilados));
-    }, [librosAlquilados]);
+
 
     useEffect(() => {
         // Actualizar librosFiltrados cuando todosLibros cambie
